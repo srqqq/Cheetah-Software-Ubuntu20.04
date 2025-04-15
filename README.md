@@ -1,3 +1,12 @@
+
+## make时报错：缺少stropts.h文件
+在/usr/include目录下新建stropts.h，写入：
+```
+#if HAVE_STROPTS_H
+#include <stropts.h>
+#endif
+```
+
 ## Cheetah-Software
 This repository contains the Robot and Simulation software project.  For a getting started guide, see the documentation folder.
 
